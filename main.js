@@ -8,7 +8,7 @@ const canvas = document.querySelector("#webgl");
 const scene = new THREE.Scene();
 //背景用のﾃｷｽﾁｬ
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("./bg/scene-bg.jpg");
+const bgTexture = textureLoader.load("/bg/scene-bg.jpg");
 scene.background = bgTexture;
 
 //オブジェクト
