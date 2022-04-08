@@ -1,5 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
+import bg from "./bg/bg.jpg";
 
 //canvas
 const canvas = document.querySelector("#webgl");
@@ -8,7 +9,7 @@ const canvas = document.querySelector("#webgl");
 const scene = new THREE.Scene();
 //背景用のﾃｷｽﾁｬ
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("/bg/bg.jpg");
+const bgTexture = textureLoader.load(bg);
 scene.background = bgTexture;
 
 //オブジェクト
